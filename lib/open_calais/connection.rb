@@ -42,7 +42,7 @@ module OpenCalais
 
     def connection(options={})
       opts = merge_default_options(options)
-      Faraday::Connection.new(opts) do |connection|
+      Faraday.new(opts) do |connection|
         connection.request  :url_encoded
         connection.response :mashify
         connection.response :logger if ENV['DEBUG']
