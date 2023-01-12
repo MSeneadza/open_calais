@@ -22,7 +22,7 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency('faraday-mashify')
   gem.add_runtime_dependency('multi_json')
   gem.add_runtime_dependency('multi_xml')
-  gem.add_runtime_dependency('excon')
+  gem.add_runtime_dependency('faraday-excon')
   gem.add_runtime_dependency('hashie')
   gem.add_runtime_dependency('activesupport')
 
